@@ -1,0 +1,25 @@
+{
+  "name": "bootstrapkit",
+  "version": "1.0.0",
+  "description": "bootstrap starter kit for static websites",
+  "main": "index.html",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "bootstrap",
+    "static",
+    "sites"
+  ],
+  "author": "James Foley",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.15.0"
+  }
+}

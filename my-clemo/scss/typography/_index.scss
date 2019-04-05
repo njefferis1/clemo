@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+$base-font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol" !default;
+$monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
+$heading-font-family: "Noto Sans",
+sans-serif;
+$heading-font-weight: 400;
+$text-color:#444;
+$base-font-size:100%;
+$base-font-weight:400;
+$loud-color:tomato;
+$quiet-color:cornflowerblue;
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('../fonts/montserrat/montserrat-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    color: $text-color;
+    font-size: "Montserrat";
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+}
+
+.h1,
+.h2 {
+    line-height: 1.1;
+}
+
+.h3,
+.h4 {
+    line-height: 1.3;
+}
+
+.h1 {
+    font-size: 400%;
+    letter-spacing: -2px;
+}
+
+.h2 {
+    font-size: 250%;
+    letter-spacing: -1px;
+}
+
+.h3 {
+    font-size: 200%;
+}
+
+.h4 {
+    font-size: 180%;
+}
+
+.h5 {
+    font-size: 130%;
+}
+
+/* .fixed {
+    // font-family: $fixed-font-family;
+    // font-size: $fixed-font-size;
+    // line-height: $fixed-line-height;
+}
+ */
+.quiet {
+    color: $quiet-color;
+}
+
+.loud {
+    color: $loud-color;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+    @extend .loud;
+}
+
+.block-margins {
+    margin: 1em 0;
+}
+
+.unordered-list {
+    list-style-type: disc;
+}
+
+.ordered-list {
+    list-style: decimal;
+}
