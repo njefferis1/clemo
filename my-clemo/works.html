@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-    .container grid
-    .row for items to be placed on the grid
-
-    logo col-1
-    ul col-11, d-flex, ml-auto
- -->
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +16,25 @@
         
 
     <div class="container">
-            
+        <style>
+            .d-flex a {
+            color: grey;
+            text-decoration: none;
+            }
+            .d-flex a:hover {
+                color: black;
+                text-decoration: none;
+            }
+            .active{
+                font-weight: 700;
+            }
+            .bottom-line{
+                border-bottom: 2px solid black;
+            }
+            .nav-item a:hover{
+                font-weight: 700;
+            }
+        </style>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand col-1" href="index.html">clemo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -32,19 +44,19 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav text-black-50 d-flex ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">about us</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="services.html">services</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">works</a>
+                        <a class="nav-link" href="works.html"><span class="bottom-line">wor</span>ks</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="blog.html">blog</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">contact</a>
                     </li>
                 </ul>
@@ -104,7 +116,7 @@
         </div>
 
         <div class="text-center mb-sm-5">
-            <button  style="border-radius: 12px; width: 130px; height: 30px; background: black; color: #fff;">learn more</button>
+            <button onclick="window.location.href='golfino-awards.html'" style="border-radius: 12px; width: 130px; height: 30px; background: black; color: #fff;">learn more</button>
         </div>
 
     </main>
